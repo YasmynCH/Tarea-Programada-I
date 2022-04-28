@@ -1,19 +1,26 @@
 #ifndef ENVIOTIPO1_H
 #define ENVIOTIPO1_H
 
+#include "tipoEnvio.h"
+
+using namespace std;
 
 class EnvioTipo1 {
 
 
     private:
 
-    int clase1= 1;
-    int clase2= 2;
-    int clase3= 3;
+    int peso;
+    int clasePorKm;
+    int distancia;
     
     public:
 
-    float CalculoEnvioPrimeraClase(int peso, int clasePorKm);
+    EnvioTipo1();
+    EnvioTipo1(int peso, int distancia, int clasePorKm);
+    float CalculoEnvioTipo1(int peso, int distancia, int clasePorK);
+
+    
 
 };
 

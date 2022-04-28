@@ -1,13 +1,23 @@
 #ifndef ENVIOTIPO2_H
 #define ENVIOTIPO2_H
 
+#include "tipoEnvio.h"
 
-class EnvioTipo2 {
+using namespace std;
 
-    
+class EnvioTipo2 : public TipoEnvio {
+
+    float costoBase = 35.00;
+    int peso;
+    int distancia; 
+
     public:
 
-    float CalculoEnvioSegundaClase(int peso, int distancia);
+    EnvioTipo2();
+    EnvioTipo2(int peso, int distancia, int clasePorKm);
+    float CalculoEnvioTipo2(int peso, int distancia, int clasePorK);
+
+    virtual float CalculoEnvioTotal();
 
 };
 
