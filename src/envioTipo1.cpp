@@ -22,11 +22,11 @@ float EnvioTipo1::CalculoEnvioTipo1(int peso, int distancia, int clasePorK){
     switch (clasePorKm){
 
     case 1:
-        if (peso >= 0 || peso <= 3)
+        if (peso <= 3)
         {
             resultado = 0.300;
         }
-        else if (peso >= 4 || peso <= 8)
+        else if (peso <= 8)
         {
             resultado = 0.450;
         }
@@ -38,11 +38,11 @@ float EnvioTipo1::CalculoEnvioTipo1(int peso, int distancia, int clasePorK){
 
     case 2:
 
-        if (peso >= 0 || peso <= 3)
+        if (peso <= 3)
         {
             resultado = 0.0280;
         }
-        else if (peso >= 4 || peso <= 8)
+        else if (peso <= 8)
         {
             resultado = 0.0530;
         }
