@@ -2,6 +2,12 @@
 
 using namespace std;
 
+
+EnvioTipo2::EnvioTipo2(){
+
+    
+}
+
 EnvioTipo2::EnvioTipo2(int peso, int distancia, int clasePorKm){
 
     this->costoBase;
@@ -23,6 +29,3 @@ float EnvioTipo2::CalculoEnvioTipo2(int peso, int distancia, int clasePorK){
     return costoBase;
 }
 
-float EnvioTipo2::CalculoEnvioTotal(){
-    return 0.0;
-}

@@ -2,6 +2,12 @@
 
 using namespace std;
 
+EnvioTipo1::EnvioTipo1(){
+
+    
+}
+
+
 EnvioTipo1::EnvioTipo1(int peso, int distancia, int clasePorKm){
 
     this->peso = peso;
