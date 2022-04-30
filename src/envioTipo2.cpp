@@ -15,7 +15,7 @@ EnvioTipo2::EnvioTipo2(int peso, int distancia, int clasePorKm){
     this->peso = peso;
 }
 
-float EnvioTipo2::CalculoEnvioTipo2(int peso, int distancia, int clasePorK){
+float EnvioTipo2::CalculoEnvioTotal(int peso, int distancia, int clasePorK){
 
 
     if (peso >= 10){
