@@ -4,7 +4,10 @@ all:
 	mkdir -p bin
 	g++ $(FLAGS) src/envioTipo1.cpp -o bin/envioTipo1.o
 	g++ $(FLAGS) src/envioTipo2.cpp -o bin/envioTipo2.o
-	g++ $(FLAGS) src/tipoEnvio.cpp -o bin/tipoEnvio.o
+	g++ $(FLAGS) src/tipoEnvio.cpp -o bin/controlEnvio.o
+	g++ $(FLAGS) src/controlEnvio.cpp -o bin/tipoEnvio.o
+	g++ $(FLAGS) src/main.cpp -o bin/main.o
+	g++ -g -o bin/Tarea-I bin/envioTipo1.o bin/envioTipo2.o bin/tipoEnvio.o bin/controlEnvio.o bin/main.o 
 
 	
 test:
@@ -15,7 +18,8 @@ test:
 	g++ $(FLAGS) src/envioTipo1.cpp -o bin/envioTipo1.o 
 	g++ $(FLAGS) src/envioTipo2.cpp -o bin/envioTipo2.o 
 	g++ $(FLAGS) src/tipoEnvio.cpp -o bin/tipoEnvio.o
-	g++ -g -o bin/test bin/test_envioTipo1_calculoEnvio.o bin/test_envioTipo2_calculoEnvio.o bin/envioTipo1.o bin/envioTipo2.o bin/tipoEnvio.o -lgtest -lgtest_main -lpthread
+	g++ -g -o bin/tests bin/test_envioTipo1_calculoEnvio.o bin/test_envioTipo2_calculoEnvio.o -lgtest -lgtest_main -lpthread
+
 
 clean:
 	rm -Rf bin
