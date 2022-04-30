@@ -11,7 +11,7 @@ test:
 	mkdir -p bin
 	g++ $(FLAGS) tests/test_envioTipo1_calculoEnvio.cpp -o bin/test_envioTipo1_calculoEnvio.o
 	g++ $(FLAGS) tests/test_envioTipo1_calculoEnvioSegundaClase.cpp -o bin/test_envioTipo1_calculoEnvioSegundaClase.o
-	g++ $(FLAGS) tests/test_envioTipo2_calculoEnvio.cpp -o bin/test_envioTipo2_calculoEnvio.o
+	g++ $(FLAGS) tests/tests_envioTipo2_calculoEnvio.cpp -o bin/test_envioTipo2_calculoEnvio.o
 	g++ $(FLAGS) src/envioTipo1.cpp -o bin/envioTipo1.o 
 	g++ $(FLAGS) src/envioTipo2.cpp -o bin/envioTipo2.o 
 	g++ $(FLAGS) src/tipoEnvio.cpp -o bin/tipoEnvio.o
