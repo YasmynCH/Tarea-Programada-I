@@ -18,7 +18,7 @@ class EnvioTipo1 {
 
     EnvioTipo1();
     EnvioTipo1(int peso, int distancia, int clasePorKm);
-    float CalculoEnvioTipo1(int peso, int distancia, int clasePorK);
+    float CalculoEnvioTotal(int peso, int distancia, int clasePorK);
 
     
 
