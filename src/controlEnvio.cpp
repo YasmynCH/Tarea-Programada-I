@@ -26,7 +26,7 @@ float ControlEnvio::ObtenerControl() {
 
     for (TipoEnvio* envio : this->controlDeEnvios)
     {
-        resultado += envio-> CalculoEnvio(peso, distancia, clasePorKm);
+        resultado += envio-> CalculoEnvioTotal(peso, distancia, clasePorKm);
     }
 
     return resultado;
