@@ -17,6 +17,7 @@ class ControlEnvio {
     void AgregarEnvio(TipoEnvio *envio);
     float ObtenerControl();
 
+    virtual float CalculoEnvioTotal(int peso, int distancia, int clasePorKm);
 };
 
 #endif
