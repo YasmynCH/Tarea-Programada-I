@@ -3,11 +3,6 @@
 using namespace std;
 
 
-EnvioTipo2::EnvioTipo2(){
-
-    
-}
-
 EnvioTipo2::EnvioTipo2(int peso, int distancia, int clasePorKm){
 
     this->costoBase;
@@ -15,7 +10,7 @@ EnvioTipo2::EnvioTipo2(int peso, int distancia, int clasePorKm){
     this->peso = peso;
 }
 
-float EnvioTipo2::CalculoEnvioTotal(int peso, int distancia, int clasePorK){
+float EnvioTipo2::CalculoEnvio(){
 
 
     if (peso >= 10){

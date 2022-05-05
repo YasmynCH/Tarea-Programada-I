@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class EnvioTipo1 {
+class EnvioTipo1 : public TipoEnvio{
 
 
     private:
@@ -16,15 +16,13 @@ class EnvioTipo1 {
     
     public:
 
-    EnvioTipo1();
+
     EnvioTipo1(int peso, int distancia, int clasePorKm);
-    float CalculoEnvioTotal(int peso, int distancia, int clasePorK);
+    virtual float CalculoEnvio();
 
     
 
 };
-
-
 
 #endif
 

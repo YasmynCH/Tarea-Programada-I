@@ -1,24 +1,42 @@
-#include "tipoEnvio.h"
 #include "envioTipo1.h"
 #include "envioTipo2.h"
-#include "controlEnvio.h"
+#include "tipoEnvio.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-int main() {
+int main()
+{
 
-    ControlEnvio *controlEnvio = new ControlEnvio();    
+    vector<TipoEnvio *> controlDeEnvios;
 
-    EnvioTipo1* envioTipo1PrimeraClase = new EnvioTipo1(2, 1, 0);
-    controlEnvio->AgregarEnvio(envioTipo1PrimeraClase);
+    int peso = 3;
+    int distancia = 5;
+    int clasePorKm = 1;
 
-    EnvioTipo2* envioTipo2PrimerCaso = new EnvioTipo2(8, 600, 0);
+    EnvioTipo1 *envio1 = new EnvioTipo1(peso, distancia, clasePorKm);
+    controlDeEnvios.push_back(envio1);
 
-    float total = controlEnvio->ObtenerControl();
+    int peso1 = 10;
+    int distancia1 = 600;
+    int clasePorKm1 = 0;
 
-    cout << "Total de envios realizados: " << total << endl;
+    EnvioTipo2 *envio2 = new EnvioTipo2(peso1,  distancia1, clasePorKm1);
+    controlDeEnvios.push_back(envio2);
 
-    delete controlEnvio;
+    float resultado = 0;
 
+    for (TipoEnvio *envio : controlDeEnvios)
+    {
+
+        resultado += envio->CalculoEnvio();
+                     
+    }
+
+    std::cout << "El monto total de los envios es de " <<resultado<< std::endl;
+
+
+    delete envio1;
+    delete envio2;
 }

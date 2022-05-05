@@ -3,20 +3,16 @@
 
 using namespace std;
 
-class TipoEnvio {
-
+class TipoEnvio
+{
 
     int peso;
     int distancia;
     int clasePorKm;
 
-    public:
-
-    TipoEnvio();
-
+public:
     virtual ~TipoEnvio();
-    
-    virtual float CalculoEnvioTotal()= 0;
+    virtual float CalculoEnvio() = 0;
 };
 
-#endif 
+#endif

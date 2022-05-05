@@ -2,11 +2,6 @@
 
 using namespace std;
 
-EnvioTipo1::EnvioTipo1(){
-
-    
-}
-
 
 EnvioTipo1::EnvioTipo1(int peso, int distancia, int clasePorKm){
 
@@ -15,7 +10,7 @@ EnvioTipo1::EnvioTipo1(int peso, int distancia, int clasePorKm){
     this->clasePorKm = clasePorKm;
 }
 
-float EnvioTipo1::CalculoEnvioTotal(int peso, int distancia, int clasePorK){
+float EnvioTipo1::CalculoEnvio(){
 
     float resultado = 0.0;
 
