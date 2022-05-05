@@ -17,7 +17,6 @@
             "MIMode": "gdb", // lldb in Mac, gdb in Linux/WSL
             "preLaunchTask": "Compile the program"
         },
-
         {
             "name": "g++ - Debug tests",
             "type": "cppdbg",
@@ -32,4 +31,4 @@
             "preLaunchTask": "Compile the tests"
         }
     ]
-}         
+}
