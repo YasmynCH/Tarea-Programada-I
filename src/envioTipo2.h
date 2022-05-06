@@ -15,7 +15,7 @@ class EnvioTipo2 : public TipoEnvio {
     public:
 
     
-    EnvioTipo2(int peso, int distancia, int clasePorKm);
+    EnvioTipo2(int peso, int distancia);
 
     virtual float CalculoEnvio();
 

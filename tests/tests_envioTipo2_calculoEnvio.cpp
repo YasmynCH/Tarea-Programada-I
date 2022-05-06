@@ -13,8 +13,8 @@ namespace
 
         int distancia = 600;
         int peso = 9;
-        int clasePorKm = 0;
-        EnvioTipo2 envioTipo2(peso, distancia, clasePorKm);
+
+        EnvioTipo2 envioTipo2(peso, distancia);
 
         // Act - ejecute la operación
 
@@ -32,8 +32,8 @@ namespace
         // Arrange - configurar el escenario
         int distancia = 400;
         int peso = 11;
-        int clasePorKm = 0;
-        EnvioTipo2 envioTipo2(peso, distancia, clasePorKm);
+
+        EnvioTipo2 envioTipo2(peso, distancia);
 
         // Act - ejecute la operación
 
@@ -51,8 +51,8 @@ namespace
         // Arrange - configurar el escenario
         int distancia = 900;
         int peso = 15;
-        int clasePorKm = 0;
-        EnvioTipo2 envioTipo2(peso, distancia, clasePorKm);
+
+        EnvioTipo2 envioTipo2(peso, distancia);
 
         // Act - ejecute la operación
 

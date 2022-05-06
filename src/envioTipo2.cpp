@@ -3,7 +3,7 @@
 using namespace std;
 
 
-EnvioTipo2::EnvioTipo2(int peso, int distancia, int clasePorKm){
+EnvioTipo2::EnvioTipo2(int peso, int distancia){
 
     this->costoBase;
     this->distancia = distancia;
